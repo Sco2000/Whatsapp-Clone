@@ -90,4 +90,3 @@ export function createElement(tag, props = {}, content = "") {
 
     return el.addNode(fragment);
 }
-

@@ -10,9 +10,8 @@ let selectedItem = null;
 let selectedType = null;
 
 export function handleButtonClick(buttonId) {
-     const e = null
   FONT.forEach(element => {
-     e = document.getElementById(element.id);
+    const e = document.getElementById(element.id);
     if(e.classList.contains("bg-[#e1b447]")){
       e.classList.remove("bg-[#e1b447]");
     }
@@ -45,10 +44,6 @@ export function handleButtonClick(buttonId) {
       showElement("list-groupe");
       menu.innerHTML = "Groupes";
       renderGroup();
-      console.log(e);
-      
-      console.log(GROUPES);
-      
       break;
     case "archives":
       setClass("archives", "bg-[#e1b447]");
